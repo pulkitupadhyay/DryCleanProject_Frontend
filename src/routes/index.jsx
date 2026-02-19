@@ -18,6 +18,9 @@ const ServicesListPage = lazy(() => import('../pages/services/ServicesListPage')
 const ReportsPage = lazy(() => import('../pages/reports/ReportsPage'))
 const SettingsPage = lazy(() => import('../pages/settings/SettingsPage'))
 const HomePage = lazy(() => import('../pages/home/homepage'))
+const ServicesPage = lazy(()=>import('../pages/home/Services'))
+const PrivacyPolicy = lazy(()=>import('../pages/home/PrivacyPolicy'))
+const TermsPage  = lazy(()=>import('../pages/home/Terms'))
 
 
 const AppRoutes = () => {
@@ -27,6 +30,9 @@ const AppRoutes = () => {
       <Routes>
         {/* Public routes */}
           <Route path="/home" element={<HomePage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsPage />} />
         <Route path="/login" element={<LoginPage />} />
 
         {/* Protected routes */}
