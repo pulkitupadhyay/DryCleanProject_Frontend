@@ -30,7 +30,7 @@ const AppRoutes = () => {
       <Routes>
         {/* Public routes */}
           <Route path="/home" element={<HomePage />} />
-          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/service" element={<ServicesPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<TermsPage />} />
         <Route path="/login" element={<LoginPage />} />
